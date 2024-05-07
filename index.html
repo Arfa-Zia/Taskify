@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Taskify</title>
 </head>
 <body>
-    <h1>Taskify</h1>
+    <header>
+     <h1>Taskify</h1>   
+    </header>
+    <main>
+        <div id="side-menu">
+            <div class="side-items">All Tasks</div>
+            <div class="side-items">Today</div>
+            <div class="side-items">Tommorow</div>
+            <div class="side-items">Week</div>
+            <div class="side-items">Month</div>
+            <div class="side-items">Completed</div>
+            <div class="side-items"><i class="fa-regular fa-star"></i>Important</div>
+            <div class="btn-group">
+                <button class="btns add-project-btn"><i class="fa fa-plus"></i></button>
+                <p>Add new project</p>
+            </div>
+        </div>
+        <div id="main-menu">
+            <div class="btn-group">
+                <button class="btns add-task-btn"><i class="fa fa-plus"></i></button>
+                <p>Add new task</p>
+            </div>
+            <div class="task-div">
+            <input type="checkbox" class="task-checkbox">
+            <div class="tasks">
+                <h5 class="task-title">Title</h5>
+                <p class="task-description">Description</p>
+                <div class="task-info">
+                    <p class="due-date">Due Date: 12-12-12</p>
+                    <div class="btn-group">
+                        <button class="btns imp-btn"><i class="fa-regular fa-star"></i></button>
+                        <button class="btns edit-btn"><i class="fa fa-pen-to-square"></i></button>
+                        <button class="btns delete-btn"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>Copyright <i class="fa-regular fa-copyright"></i>2024 Arfa Zia <i class="fa-brands fa-github"></i></p>
+    </footer>
+    
 </body>
 </html>
